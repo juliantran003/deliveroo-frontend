@@ -1,1 +1,157 @@
-/* Reset rules */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f3f5f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Main Structure */
+
+.center {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header-around {
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  height: auto;
+  width: auto;
+  margin-bottom: 2px;
+}
+
+#logo {
+  width: 155px;
+}
+
+/* Restaurant */
+
+.restaurant {
+  display: flex;
+  height: 256px;
+  padding: 25px 0;
+}
+
+.restaurant div {
+  padding-right: 60px;
+}
+
+.restaurant-description {
+  color: #868a8a;
+  font-size: 19px;
+  line-height: 27px;
+}
+
+#restaurant-picture {
+  width: 350px;
+  height: 196px;
+  border-radius: 5px;
+}
+
+/* Menu */
+
+.left {
+  flex: 1;
+}
+.right {
+  height: 100%;
+  flex: 1;
+}
+
+.container {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2 {
+  margin: 25px 0;
+}
+
+h3 {
+  font-weight: 400;
+  margin: none;
+}
+
+p {
+  color: #868a8a;
+  padding: 0;
+}
+
+i,
+span {
+  font-weight: 800;
+  font-size: 12px;
+  color: #ff8000;
+}
+
+.meal-description {
+  height: auto;
+  overflow: hidden;
+}
+
+.item-description {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.meal-pic {
+  border-radius: 5px;
+  object-fit: cover;
+  width: 130px;
+  height: 130px;
+}
+
+.item-container {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 160px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.category-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  width: 840px;
+}
+
+.basket {
+  margin-top: 30px;
+  border-radius: 5px;
+  width: 350px;
+  background-color: white;
+  height: 350px;
+}
