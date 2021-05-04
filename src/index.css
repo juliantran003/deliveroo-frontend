@@ -19,7 +19,11 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
+.h6,
+div,
+.div,
+p,
+.p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -97,9 +101,10 @@ h3 {
   margin: none;
 }
 
-p {
+.left p {
   color: #868a8a;
   padding: 0;
+  margin: 10px 0;
 }
 
 i,
@@ -141,6 +146,10 @@ span {
   margin-bottom: 15px;
 }
 
+.item-container:hover {
+  background-color: lightgray;
+}
+
 .category-container {
   flex: 1;
   display: flex;
@@ -149,9 +158,68 @@ span {
 }
 
 .basket {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 30px;
   border-radius: 5px;
   width: 350px;
   background-color: white;
   height: 350px;
+}
+
+.basket-meal {
+  padding-left: 5px;
+}
+
+.basket-list {
+  width: 100%;
+  max-height: 250px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.basket-item {
+  flex: 15;
+
+  display: flex;
+  flex-wrap: nowrap;
+
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.basket-price {
+  flex: 3;
+}
+
+.basket-list p {
+  font-size: 12px;
+}
+
+.basket-bottom {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 350px;
+}
+
+.total {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.line {
+  width: 100%;
+  border: rgb(197, 197, 197) solid 0.5px;
+  margin: 10px 0;
 }
